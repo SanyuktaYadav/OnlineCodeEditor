@@ -6,9 +6,6 @@ function run() {
     output.contentDocument.body.innerHTML = htmlCode + cssCode;
     output.contentWindow.eval(javaScriptCode);
 }
-// document.querySelector(".editor #html-code").addEventListener("keyup", run);
-// document.querySelector(".editor #css-code").addEventListener("keyup", run);
-// document.querySelector(".editor #javascript-code").addEventListener("keyup", run);
 
 document.querySelector(".editor #run-button").addEventListener("click", run);
 
